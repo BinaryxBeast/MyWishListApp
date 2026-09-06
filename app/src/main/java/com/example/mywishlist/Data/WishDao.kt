@@ -19,7 +19,7 @@ abstract class WishDao {
     abstract suspend fun getAllWishes(): Flow<List<Wish>>
 
     @Update
-    abstract suspend fun updateAWish()
+    abstract suspend fun updateAWish(wish: Wish)
 
     @Delete
     abstract suspend fun deleteAWish(wishEntity: Wish)
